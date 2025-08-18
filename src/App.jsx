@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AddGoalForm from "./AddGoalForm";
 import GoalList from "./GoalList";
 
-const API = "http://localhost:3001/goals"; // json-server endpoint
+const API = "http://localhost:3002/goals"; // json-server endpoint
 
 export default function App() {
   const [goals, setGoals] = useState([]);
