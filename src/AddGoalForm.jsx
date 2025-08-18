@@ -17,7 +17,7 @@ export default function AddGoalForm({ onAdd }) {
     setBusy(true);
     setErr("");
     try {
-      await onAdd({ ...form, currentAmount: 0 }); // 👈 ensure currentAmount starts at 0
+      await onAdd({ ...form, currentAmount: 0 }); // ensure currentAmount starts at 0
       setForm(initial);
     } catch (e) {
       setErr(e.message);
